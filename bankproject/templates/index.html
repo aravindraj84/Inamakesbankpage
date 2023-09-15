@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>BANK APPLICATION by Aravind </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+	</head>
+	<body class="landing is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					  <center>
+    						<a ><img src="{% static 'images/logo.jpg' %}" alt="logo" width="130px" height="130px"></a>
+					  </center>
+					<h1><a>BANK APPLICATION</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="credentialsapp/register">Register</a></li>
+							<li>
+								<a href="#" class="icon solid fa-angle-down">Branches</a>
+								<ul>
+									<li><a href="https://en.wikipedia.org/wiki/State_Bank_of_India">Idukki </a></li>
+									<li><a href="https://en.wikipedia.org/wiki/Federal_Bank">Kottayam</a></li>
+									<li><a href="https://en.wikipedia.org/wiki/South_Indian_Bank">Pathanamthitta</a></li>
+									<li><a href="https://en.wikipedia.org/wiki/Dhanlaxmi_Bank">Kollam</a></li>
+									<li><a href="https://en.wikipedia.org/wiki/Manappuram_Finance">Alappuzha</a></li>
+<!--									<li>-->
+<!--										<a href="#">Submenu</a>-->
+<!--										<ul>-->
+<!--											<li><a href="#">Option One</a></li>-->
+<!--											<li><a href="#">Option Two</a></li>-->
+<!--											<li><a href="#">Option Three</a></li>-->
+<!--											<li><a href="#">Option Four</a></li>-->
+<!--										</ul>-->
+<!--									</li>-->
+								</ul>
+							</li>
+							<li><a href="credentialsapp/login" class="button">Log in</a></li>
+						</ul>
+					</nav>
+				</header>
+
+
+			<!-- Banner -->
+				<section id="banner">
+					{% for msg in messages %}
+		 			<h4>{{msg}}</h4>
+					{% endfor %}
+					<h2>Bank Application</h2>
+					<p>"Money Everywhere"</p>
+					<ul class="actions special">
+						<li><a href="credentialsapp/register" class="button primary">Register</a></li>
+						<li><a href="credentialsapp/login" class="button">Login</a></li>
+					</ul>
+				</section>
+
+			<!-- Main -->
+				<section id="main" class="container">
+
+					<section class="box special">
+						<header class="major">
+							<h2>Why Choose Us ?
+							<br />
+							</h2>
+							<p>State Bank of India (SBI) is an Indian multinational public sector bank and financial services statutory body headquartered in Mumbai, Maharashtra. SBI is the 48th largest bank in the world by total assets and ranked 221st in the Fortune Global 500 list of the world's biggest corporations of 2020, being the only Indian bank on the list.[10] It is a public sector bank and the largest bank in India[11] with a 23% market share by assets and a 25% share of the total loan and deposits market.[12] It is also the tenth largest employer in India with nearly 250,000 employees.[13][14][15] On 14 September 2022, State Bank of India became the third lender (after HDFC Bank and ICICI Bank) and seventh Indian company to cross the ₹ 5-trillion market capitalisation on the Indian stock exchanges for the first time.</p>
+						</header>
+						<span class="image featured"><img src="{% static 'images/Family01.jpg' %}" alt="" /></span>
+					</section>
+
+
+					<div class="row">
+						<div class="col-6 col-12-narrower">
+
+							<section class="box special">
+								<span class="image featured"><img src="{% static 'images/Internet.jpg' %}" alt="" /></span>
+								<h3>INTERNET BANKING </h3>
+								<p>Online banking, also known as internet banking, virtual banking, web banking or home banking, is a system that enables customers of a bank or other financial institution to conduct a range of financial transactions through the financial institution's website or mobile app. Since the early 2000s this has become the most common way that customers access their bank accounts. </p>
+								<ul class="actions special">
+									<li><a href="#" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+						</div>
+						<div class="col-6 col-12-narrower">
+
+							<section class="box special">
+								<span class="image featured"><img src="{% static 'images/serviece.jpg' %}" alt="" /></span>
+								<h3>24/7 Customer Serviece</h3>
+								<p>Customer service is the assistance and advice provided by a company to those people who buy or use its products or services. Each industry requires different levels of customer service,[1] but towards the end, the idea of a well-performed service is that of increasing revenues. The perception of success of the customer service interactions is dependent on employees "who can adjust themselves to the personality of the custome</p>
+								<ul class="actions special">
+									<li><a href="#" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+
+						</div>
+					</div>
+
+				</section>
+
+			<!-- CTA -->
+				<section id="cta">
+
+					<h2>Bank Application</h2>
+					<p>“Pure Banking, Nothing Else” is the slogan of the State Bank of India (SBI). It is a public sector bank and provider of financial services in India. It is a statutory organization with its main office in Mumbai.</p>
+
+
+				</section>
+
+			<!-- Footer -->
+					<div style="margin-top:auto;" class="footer my_footer navbar-fixed-bottom">
+ 							 <p class="text-center"> BANK APPLICATION BY ARAVIND </p>
+					</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.dropotron.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
+
+
+
+	</body>
+</html>
